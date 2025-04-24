@@ -60,20 +60,20 @@
   <!-- 步骤 1：欢迎页 -->
   <div id="step1" class="step active">
     <img src="welcome.jpg" class="guide" alt="欢迎来到诺丁汉大学 Jubilee 校区">
-    <button class="next-btn" onclick="goToStep(2)">next</button>
+    <button class="next-btn" onclick="goToStep(2)">下一张</button>
   </div>
 
   <!-- 步骤 2：去教室指引 -->
   <div id="step2" class="step">
     <img src="guide.jpg" class="guide" alt="前往教室路线指引">
-    <button class="next-btn" onclick="startCamera()">nect</button>
+    <button class="next-btn" onclick="startCamera()">开始拍照</button>
   </div>
 
   <!-- 步骤 3：拍照模式 -->
   <div id="camera">
     <video id="v" autoplay playsinline></video>
     <div id="cap">🎓</div>
-    <a id="btn">📸 take pictures</a>
+    <a id="btn">📸 拍照</a>
   </div>
 
   <script>
@@ -114,8 +114,7 @@
         const url = c.toDataURL('image/jpeg');
         btn.href = url;
         btn.download = 'arphoto.jpg';
-        btn.innerText = '⬇ Download photos
-';
+        btn.innerText = '⬇ 下载照片';
       };
     }
   </script>
